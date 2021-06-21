@@ -1,0 +1,7 @@
+SELECT 
+	FIRE_YEAR AS year,
+	STAT_CAUSE_DESCR AS cause,
+	COUNT(FOD_ID) AS fire_count 
+FROM Fires f
+GROUP BY 1,2
+ORDER BY 1 ASC, 3 DESC
